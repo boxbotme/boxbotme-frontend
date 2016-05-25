@@ -1,210 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <!-- Standard Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <!-- Site Properties -->
-  <title>BoxBot - Coming Soon</title>
-  <link rel="stylesheet" type="text/css" href="dist/components/reset.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/site.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <link rel="stylesheet" type="text/css" href="dist/components/container.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/grid.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/header.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/image.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/menu.css">
+    <title>BoxBot - Coming Soon</title>
 
-  <link rel="stylesheet" type="text/css" href="dist/components/divider.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/dropdown.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/segment.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/button.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/list.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/icon.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/sidebar.css">
-  <link rel="stylesheet" type="text/css" href="dist/components/transition.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <style type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
 
-    .hidden.menu {
-      display: none;
-    }
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    .masthead.segment {
-      padding: 1em 0em;
-    }
-    .masthead .logo.item img {
-      margin-right: 1em;
-    }
-    .masthead .ui.menu .ui.button {
-      margin-left: 0.5em;
-    }
-    .masthead h1.ui.header {
-      margin-top: 3em;
-      margin-bottom: 0em;
-      font-size: 4em;
-      font-weight: 100;
-    }
-    .masthead h2 {
-      font-size: 1.7em;
-      font-weight: normal;
-    }
-
-    .ui.vertical.stripe {
-      padding: 8em 0em;
-    }
-    .ui.vertical.stripe h3 {
-      font-size: 2em;
-    }
-    .ui.vertical.stripe .button + h3,
-    .ui.vertical.stripe p + h3 {
-      margin-top: 3em;
-    }
-    .ui.vertical.stripe .floated.image {
-      clear: both;
-    }
-    .ui.vertical.stripe p {
-      font-size: 1.33em;
-    }
-    .ui.vertical.stripe .horizontal.divider {
-      margin: 3em 0em;
-    }
-
-    .quote.stripe.segment {
-      padding: 0em;
-    }
-    .quote.stripe.segment .grid .column {
-      padding-top: 5em;
-      padding-bottom: 5em;
-    }
-
-    .footer.segment {
-      padding: 5em 0em;
-    }
-
-    .secondary.pointing.menu .toc.item {
-      display: none;
-    }
-
-    @media only screen and (max-width: 700px) {
-      .ui.fixed.menu {
-        display: none !important;
-      }
-      .secondary.pointing.menu .item,
-      .secondary.pointing.menu .menu {
-        display: none;
-      }
-      .secondary.pointing.menu .toc.item {
-        display: block;
-      }
-      .masthead.segment {
-        min-height: 350px;
-      }
-      .masthead h1.ui.header {
-        font-size: 2em;
-        margin-top: 1.5em;
-        font-weight: 100;
-      }
-      .masthead h2 {
-        margin-top: 0.5em;
-        font-size: 1.5em;
-      }
-    }
-
-
-  </style>
-
-  <script src="assets/library/jquery.min.js"></script>
-  <script src="dist/components/visibility.js"></script>
-  <script src="dist/components/sidebar.js"></script>
-  <script src="dist/components/transition.js"></script>
-  <script>
-  $(document)
-    .ready(function() {
-
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
-
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-
-    })
-  ;
-  </script>
 </head>
+
 <body>
-<!-- Page Contents -->
-<div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment">
-    <div class="ui container">
-      <div class="ui large secondary inverted pointing menu">
-        <a class="toc item">
-          <i class="sidebar icon"></i>
-        </a>
-        <div class="menu">
-            <div class="item"> </div>
-            <div class="item"><img src="assets/images/logo/bottext.png" id="text"></div>
-        </div>
-        <div class="right item">
-          <a class="ui inverted button" href="signin.html">Set Up</a>
-        </div>
-      </div>
-    </div>
-    <div class="ui left aligned stackable grid container">
-      <div class="ten wide column">
-        <h1 class="ui masthead header" style="color:#3f3f3f">Order pizza at the touch of a button.</h1>
+    <!-- Page Content -->
+    <div class="container">
 
-        <a class="ui massive inverted teal button" style="margin-left:0em" href="signin.html">Set up</a>
-      </div>
-      <div class="six wide right floated column">
-        <br>
-        <br>
-        <br>
-        <br>
-        <img src="assets/images/wireframe/square-image.png">
+            <div class="col-lg-6 container" style="background-color:#EB6361">
+              <h1 style="color:#fff">Left Side</h1>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+            <div class="col-lg-6 container" style="background-color:#FFFFFF">
+                  <h1 style="color:#EB6361">Right Side</h1>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+            </div>
 
-      </div>
-  </div>
-</div>
-</div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-
-  <script>
-	function rotateImg() {
-    var theta = 0;
-    var rotating = false;
-    var rotateInstance;
-	  if ( rotating ) {
-        window.clearInterval( rotateInstance );
-		rotating = false;
-	  } else {
-	    rotateInstance = window.setInterval( function() {
-	      document.getElementById("logo").style = "-moz-transform: rotate(" + theta + "deg); -ms-transform: rotate(" + theta + "deg); -webkit-transform: rotate(" + theta + "deg);";
-	      if ( theta >= 359 ) {
-          theta=0;
-		  } else {
-		    theta++;
-		  }
-	    }, 25);
-		rotating = true;
-	  }
-
-	}
-  </script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
