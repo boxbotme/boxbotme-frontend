@@ -232,7 +232,7 @@
     <div class="modal-content" >
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title text-center" id="signinLabel"><img src="assets/images/logo/botlogo-color.png" style="height:20%;width:20%"></img></h4>
+        <h4 class="modal-title text-center" id="signinLabel"><img src="assets/images/logo/botlogo-color.png" style="height:15%;width:15%"></img></h4>
       </div>
       <div class="modal-body">
         <form class="form-signin">
@@ -250,15 +250,18 @@
   </div>
 </div>
 
-<div class="modal fade" id="signinCustomer" tabindex="-1" role="dialog" aria-labelledby="signinCustomerLabel" style="margin-top:25px">
+<div class="modal fade" id="signinCustomer" tabindex="-1" role="dialog" aria-labelledby="signinCustomerLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content" >
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title text-center" id="signinCustomerLabel"><img src="assets/images/logo/botlogo-color.png" style="height:20%;width:20%"></img></h4>
+        <h4 class="modal-title text-center" id="signinCustomerLabel"><img src="assets/images/logo/botlogo-color.png" style="height:15%;width:15%"></img></h4>
       </div>
       <div class="modal-body">
         <form class="form-signin">
+          <label for="inputZip" class="sr-only" >Zipcode</label>
+          <input type="zipcode" id="inputZip" class="form-control" placeholder="Zipcode" required autofocus>
+          <hr>
           <label for="inputFName" class="sr-only" >First Name</label>
           <input type="firstname" id="inputFName" class="form-control" placeholder="First Name" required autofocus>
           <p> </p>
@@ -268,6 +271,12 @@
           <label for="inputEmail" class="sr-only" >Email address</label>
           <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
           <p> </p>
+          <label for="inputPhone" class="sr-only" >Phone number</label>
+          <input type="phone" id="inputPhone" class="form-control" placeholder="Phone number" required autofocus>
+          <p> </p>
+          <label for="inputAddress" class="sr-only" >Address</label>
+          <input type="address" id="inputAddress" class="form-control" placeholder="Address" required autofocus>
+          <hr>
           <label for="inputPassword" class="sr-only">Password</label>
           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
           <p> </p>
@@ -282,15 +291,18 @@
   </div>
 </div>
 
-<div class="modal fade" id="signinShopper" tabindex="-1" role="dialog" aria-labelledby="signinShopperLabel" style="margin-top:25px">
+<div class="modal fade" id="signinShopper" tabindex="-1" role="dialog" aria-labelledby="signinShopperLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content" >
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title text-center" id="signinShopperLabel"><img src="assets/images/logo/botlogo-color.png" style="height:20%;width:20%"></img></h4>
+        <h4 class="modal-title text-center" id="signinShopperLabel"><img src="assets/images/logo/botlogo-color.png" style="height:15%;width:15%"></img></h4>
       </div>
       <div class="modal-body">
         <form class="form-signin">
+          <label for="inputZip" class="sr-only" >Zipcode</label>
+          <input type="zipcode" id="inputZip" class="form-control" placeholder="Zipcode" required autofocus>
+          <hr>
           <label for="inputFName" class="sr-only" >First Name</label>
           <input type="firstname" id="inputFName" class="form-control" placeholder="First Name" required autofocus>
           <p> </p>
@@ -300,6 +312,9 @@
           <label for="inputEmail" class="sr-only" >Email address</label>
           <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
           <p> </p>
+          <label for="inputPhone" class="sr-only" >Phone number</label>
+          <input type="phone" id="inputPhone" class="form-control" placeholder="Phone number" required autofocus>
+          <hr>
           <label for="inputPassword" class="sr-only">Password</label>
           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
           <p> </p>
